@@ -38,28 +38,13 @@ const ButtonGroup = styled.div`
 `;
 
 const ShortMarginButton = styled(Button)`
-<<<<<<< HEAD
   /* 컴포넌트 스타일 덮어쓰기 */
-=======
->>>>>>> 9dd9785600850c1568b2ed5a3d28cc5b4b1660b9
   & + & {
     margin-left: 0.5rem;
   }
 `;
 
-<<<<<<< HEAD
-function Dialog({
-  title,
-  children,
-  confirmText,
-  cancelText,
-  visible,
-  onConfirm,
-  onCancel,
-}) {
-=======
 function Dialog({ title, children, confirmText, cancelText, visible, onConfirm, onCancel }) {
->>>>>>> 9dd9785600850c1568b2ed5a3d28cc5b4b1660b9
   if (!visible) return null;
 
   return (
@@ -68,17 +53,8 @@ function Dialog({ title, children, confirmText, cancelText, visible, onConfirm, 
         <h3>{title}</h3>
         <p>{children}</p>
         <ButtonGroup>
-<<<<<<< HEAD
-          <ShortMarginButton color="gray" onClick={onCancel}>
-            {cancelText}
-          </ShortMarginButton>
-          <ShortMarginButton color="pink" onClick={onConfirm}>
-            {confirmText}
-          </ShortMarginButton>
-=======
           <ShortMarginButton color="gray" onClick={onCancel}>{cancelText}</ShortMarginButton>
           <ShortMarginButton color="pink" onClick={onConfirm}>{confirmText}</ShortMarginButton>
->>>>>>> 9dd9785600850c1568b2ed5a3d28cc5b4b1660b9
         </ButtonGroup>
       </DialogBlock>
     </DarkBackground>
